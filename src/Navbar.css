@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.Navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5% 4.5%;
+  font-size: 1.2em;
+  min-height: 10vh;
+  font-weight: 400;
+  position: flex;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  font-family: var(--font-family);
+  background-color: transparent;
+  letter-spacing: 3px;
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.Navbar-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.Navbar-links p {
+  margin: 2rem;
+}
+
+.Navbar-scan {
+  border: none;
+  outline: 0;
+  padding: 15px 30px;
+  color: black;
+  background-color: #97e4ff;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 1.4rem;
+  width: fit-content;
+  font-family: var(--font-family);
+  letter-spacing: 3px;
+}
+
+.Navbar-scan:hover {
+  background-color: #777;
+  color: white;
+}
+
+.Navbar-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Navbar-title-icon {
+  width: 8rem;
+  margin-right: 3rem;
+  margin-top: 0rem;
+  margin-left: 1rem;
+}
+
+.Navbar-title-title {
+  width: 12rem;
+  height: 3rem;
+}
+
+.Navbar-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Navbar-links p {
+  margin: 2rem;
+}
+
+.hero {
+  position: relative;
+  z-index: -1;
+}

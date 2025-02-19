@@ -1,0 +1,8 @@
+#root {
+  text-align: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}

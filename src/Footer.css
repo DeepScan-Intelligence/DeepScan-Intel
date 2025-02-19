@@ -1,0 +1,111 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  width: 100%;
+  background-color: #f3f4f6;
+  color: #0a4570;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.Footer h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.Footer .Contact-info {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.Footer .Contact-info p {
+  margin: 0.5rem 0;
+}
+
+.Footer .Contact-info a {
+  color: #0a4570;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.Footer .Contact-info a:hover {
+  text-decoration: underline;
+}
+
+.Footer .Contact-form_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Footer .Contact-input,
+.Footer .Contact-form_info textarea {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.4rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  color: #0a4570;
+}
+
+.Footer .Contact-right textarea {
+  height: 25rem;
+  resize: none;
+}
+
+.Footer .Contact-submit {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: #97e4ff;
+  color: black;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.Footer .Contact-submit:hover {
+  background-color: #7ec7df;
+}
+
+.Footer-copyright {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  color: #0a4570;
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    padding: 3rem 1rem;
+  }
+
+  .Footer .Contact-form_info {
+    max-width: 90%;
+  }
+
+  .Footer .Contact-submit {
+    width: 100%;
+  }
+
+  .Footer-copyright {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,413 @@
+.Homepage {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.hero_image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://img.freepik.com/premium-photo/brain-scan-technology-3d-animation-human-brain-artificial-intelligence-neurosurgery-diagnostic-deep-learning-ai-modern-technology-3d-render_299057-271.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.hero-text {
+  position: relative;
+  max-width: 50%;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-left: 1%;
+  margin-top: 20vh;
+}
+
+.title {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  max-width: 50rem;
+  margin: 0;
+  text-align: left;
+  line-height: 1.2;
+  font-family: "Comfortaa", cursive;
+}
+
+.hero-text .hero-scan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-blue1);
+  color: black;
+  padding: 12px 20px;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: "Comfortaa", cursive;
+  height: 50px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-text .hero-scan:hover {
+  background-color: var(--color-blue2);
+}
+
+@media (max-width: 768px) {
+  .hero_image {
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .hero-text {
+    max-width: 90%;
+    align-items: center;
+  }
+
+  .hero-text .hero-scan {
+    align-self: center;
+  }
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  padding: 15px 30px;
+  color: black;
+  background-color: #97e4ff;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: 1.4rem;
+  width: fit-content;
+  margin-top: 2rem;
+  font-family: var(--font-family);
+  letter-spacing: 3px;
+}
+
+.hero-text button:hover {
+  background-color: #777;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hero_image {
+    justify-content: center;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .hero-text {
+    max-width: 90%;
+    align-items: center;
+  }
+
+  .hero-text button {
+    align-self: center;
+  }
+}
+
+.home {
+  margin: 0 auto;
+  text-align: left;
+}
+
+.what-we-do {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #f8f9fc;
+}
+
+.what-we-do h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Comfortaa", cursive;
+  color: #0c2d5e;
+  margin-bottom: 1rem;
+}
+
+.what-we-do-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.what-we-do-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  font-family: "Comfortaa", cursive;
+}
+
+.what-we-do-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.what-we-do-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .what-we-do {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .what-we-do h2 {
+    font-size: 2rem;
+    font-family: "Comfortaa", cursive;
+  }
+
+  .what-we-do-content,
+  .what-we-do-image {
+    max-width: 100%;
+  }
+}
+
+.scanner-section {
+  background-color: #97e4ff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.scanner-section h2 {
+  font-size: 2.5rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  color: #0a4570;
+  margin-bottom: 1rem;
+}
+
+.scanner-section p {
+  font-size: 1.1rem;
+  font-family: "Comfortaa", cursive;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.scanner-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .scanner-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .scanner-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.scanner-card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.scanner-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.scanner-card h3 {
+  font-size: 1.2rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  color: #0a4570;
+  margin-bottom: 0.5rem;
+}
+
+.scanner-card p {
+  font-size: 1rem;
+  font-family: "Comfortaa", cursive;
+  color: #444;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-we-started {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #f8f9fc;
+}
+
+.why-we-started h2 {
+  font-size: 2.5rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  color: #0c2d5e;
+  margin-bottom: 1rem;
+}
+
+.why-we-started-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.why-we-started-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  font-family: "Comfortaa", cursive;
+}
+
+.why-we-started-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.why-we-started-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .why-we-started {
+    flex-direction: column;
+    text-align: center;
+    font-family: "Comfortaa", cursive;
+  }
+
+  .why-we-started h2 {
+    font-size: 2rem;
+  }
+
+  .why-we-started-content,
+  .why-we-started-image {
+    max-width: 100%;
+  }
+}
+
+.satisfied-clients {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
+
+.satisfied-clients h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0a4570;
+  margin-bottom: 2rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.testimonial-card {
+  background: white;
+  padding: 4rem 1.5rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  font-family: "Comfortaa", cursive;
+}
+
+.testimonial-card img {
+  width: 140px;
+  height: 140px;
+  margin-top: -40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ddd;
+}
+
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  color: #0a4570;
+  margin-top: 1rem;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  font-family: "Comfortaa", cursive;
+  color: #444;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.star-rating {
+  color: #fe2860;
+  font-family: "Comfortaa", cursive;
+  font-size: 1.5rem;
+  margin-top: auto;
+}
